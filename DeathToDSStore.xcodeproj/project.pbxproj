@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		256AC3DA0F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 256AC3D90F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m */; };
+		6C0611C614A6428D00DA4240 /* FinderOverride.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C0611C514A6428D00DA4240 /* FinderOverride.m */; };
+		6C06132714A6438F00DA4240 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		6C06132D14A643B200DA4240 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C06132C14A643B200DA4240 /* AudioToolbox.framework */; };
+		6C06133214A643BE00DA4240 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C0611AC14A6420600DA4240 /* mach_override.c */; };
+		6C06135514A6459B00DA4240 /* getAddress in Resources */ = {isa = PBXBuildFile; fileRef = 6C06135314A6459B00DA4240 /* getAddress */; };
+		6C06135614A6459B00DA4240 /* getOffset in Resources */ = {isa = PBXBuildFile; fileRef = 6C06135414A6459B00DA4240 /* getOffset */; };
+		6C06136A14A646C700DA4240 /* FinderOverride.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C0611C014A6426F00DA4240 /* FinderOverride.bundle */; };
+		6C06141E14A64A6500DA4240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06141D14A64A6500DA4240 /* main.m */; };
+		6C06142514A64ADE00DA4240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06141D14A64A6500DA4240 /* main.m */; };
+		6C06143814A64B6E00DA4240 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		6C06143B14A64B7D00DA4240 /* mach_inject_bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119414A6412000DA4240 /* mach_inject_bundle.c */; };
+		6C06143E14A64B8300DA4240 /* mach_inject.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119B14A6413900DA4240 /* mach_inject.c */; };
+		6C06144814A64C8D00DA4240 /* injector in Resources */ = {isa = PBXBuildFile; fileRef = 6C06141014A64A3600DA4240 /* injector */; };
+		6C06145414A64DBF00DA4240 /* mach_inject_bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119414A6412000DA4240 /* mach_inject_bundle.c */; };
+		6C06145714A64DC600DA4240 /* mach_inject.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119B14A6413900DA4240 /* mach_inject.c */; };
+		6C06149114A66E2100DA4240 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C06149014A66E2100DA4240 /* Security.framework */; };
+		6C06163014A67C4600DA4240 /* load_bundle.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119014A6412000DA4240 /* load_bundle.c */; };
+		6C06163114A67C4700DA4240 /* mach_inject_bundle_stub.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C06119214A6412000DA4240 /* mach_inject_bundle_stub.c */; };
+		6C06163814A67C7600DA4240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
+		6C06164E14A67D5F00DA4240 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C06164D14A67D5F00DA4240 /* Carbon.framework */; };
+		6C06166314A67D9000DA4240 /* mach_inject_bundle_stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6C06135D14A6461200DA4240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C0611BF14A6426F00DA4240;
+			remoteInfo = FinderOverride;
+		};
+		6C06145214A64DAF00DA4240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C06140F14A64A3600DA4240;
+			remoteInfo = injector;
+		};
+		6C06165F14A67D8900DA4240 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C06161014A67BEA00DA4240;
+			remoteInfo = mach_inject_bundle_stub;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = Resources/English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* MainMenu.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = MainMenu.xib; path = Resources/English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3D80F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeathToDSStoreAppDelegate.h; path = source/DeathToDSStoreAppDelegate.h; sourceTree = "<group>"; };
+		256AC3D90F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeathToDSStoreAppDelegate.m; path = source/DeathToDSStoreAppDelegate.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = main.mm; path = source/main.mm; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		6C06119014A6412000DA4240 /* load_bundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = load_bundle.c; path = mach_star/load_bundle.c; sourceTree = "<group>"; };
+		6C06119114A6412000DA4240 /* load_bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = load_bundle.h; path = mach_star/load_bundle.h; sourceTree = "<group>"; };
+		6C06119214A6412000DA4240 /* mach_inject_bundle_stub.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mach_inject_bundle_stub.c; path = mach_star/mach_inject_bundle_stub.c; sourceTree = "<group>"; };
+		6C06119314A6412000DA4240 /* mach_inject_bundle_stub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject_bundle_stub.h; path = mach_star/mach_inject_bundle_stub.h; sourceTree = "<group>"; };
+		6C06119414A6412000DA4240 /* mach_inject_bundle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mach_inject_bundle.c; path = mach_star/mach_inject_bundle.c; sourceTree = "<group>"; };
+		6C06119514A6412000DA4240 /* mach_inject_bundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject_bundle.h; path = mach_star/mach_inject_bundle.h; sourceTree = "<group>"; };
+		6C06119B14A6413900DA4240 /* mach_inject.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mach_inject.c; path = mach_star/mach_inject.c; sourceTree = "<group>"; };
+		6C06119C14A6413900DA4240 /* mach_inject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_inject.h; path = mach_star/mach_inject.h; sourceTree = "<group>"; };
+		6C0611AC14A6420600DA4240 /* mach_override.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mach_override.c; path = mach_star/mach_override.c; sourceTree = "<group>"; };
+		6C0611AD14A6420600DA4240 /* mach_override.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = mach_override.h; path = mach_star/mach_override.h; sourceTree = "<group>"; };
+		6C0611C014A6426F00DA4240 /* FinderOverride.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinderOverride.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C0611C114A6426F00DA4240 /* FinderOverride-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FinderOverride-Info.plist"; path = "Resources/FinderOverride-Info.plist"; sourceTree = "<group>"; };
+		6C0611C514A6428D00DA4240 /* FinderOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinderOverride.m; path = source/FinderOverride.m; sourceTree = "<group>"; };
+		6C06132C14A643B200DA4240 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		6C06135314A6459B00DA4240 /* getAddress */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getAddress; sourceTree = "<group>"; };
+		6C06135414A6459B00DA4240 /* getOffset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getOffset; sourceTree = "<group>"; };
+		6C06141014A64A3600DA4240 /* injector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = injector; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C06141D14A64A6500DA4240 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
+		6C06149014A66E2100DA4240 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mach_inject_bundle_stub.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C06164D14A67D5F00DA4240 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DeathToDSStore-Info.plist"; path = "Resources/DeathToDSStore-Info.plist"; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* DeathToDSStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeathToDSStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6C0611BE14A6426F00DA4240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06132714A6438F00DA4240 /* Cocoa.framework in Frameworks */,
+				6C06132D14A643B200DA4240 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06140E14A64A3600DA4240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06143814A64B6E00DA4240 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06160F14A67BEA00DA4240 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06163814A67C7600DA4240 /* Foundation.framework in Frameworks */,
+				6C06164E14A67D5F00DA4240 /* Carbon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				6C06149114A66E2100DA4240 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* DeathTODSStore */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3D80F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.h */,
+				256AC3D90F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m */,
+				29B97316FDCFA39411CA2CEA /* main.mm */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+			);
+			name = DeathTODSStore;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* DeathToDSStore.app */,
+				6C0611C014A6426F00DA4240 /* FinderOverride.bundle */,
+				6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */,
+				6C06141014A64A3600DA4240 /* injector */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* DeathToDSStore */ = {
+			isa = PBXGroup;
+			children = (
+				6C06135914A645AA00DA4240 /* FinderOverride */,
+				6C06141A14A64A4F00DA4240 /* injector */,
+				080E96DDFE201D6D7F000001 /* DeathTODSStore */,
+				6C06118614A6411800DA4240 /* mach_star */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = DeathToDSStore;
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				6C06132C14A643B200DA4240 /* AudioToolbox.framework */,
+				6C06149014A66E2100DA4240 /* Security.framework */,
+				6C06164D14A67D5F00DA4240 /* Carbon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6C06118614A6411800DA4240 /* mach_star */ = {
+			isa = PBXGroup;
+			children = (
+				6C06119014A6412000DA4240 /* load_bundle.c */,
+				6C06119114A6412000DA4240 /* load_bundle.h */,
+				6C06119214A6412000DA4240 /* mach_inject_bundle_stub.c */,
+				6C06119314A6412000DA4240 /* mach_inject_bundle_stub.h */,
+				6C06119414A6412000DA4240 /* mach_inject_bundle.c */,
+				6C06119514A6412000DA4240 /* mach_inject_bundle.h */,
+				6C06119B14A6413900DA4240 /* mach_inject.c */,
+				6C06119C14A6413900DA4240 /* mach_inject.h */,
+				6C0611AC14A6420600DA4240 /* mach_override.c */,
+				6C0611AD14A6420600DA4240 /* mach_override.h */,
+			);
+			name = mach_star;
+			sourceTree = "<group>";
+		};
+		6C06135214A6459B00DA4240 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6C06135314A6459B00DA4240 /* getAddress */,
+				6C06135414A6459B00DA4240 /* getOffset */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		6C06135914A645AA00DA4240 /* FinderOverride */ = {
+			isa = PBXGroup;
+			children = (
+				6C0611C514A6428D00DA4240 /* FinderOverride.m */,
+				6C06135A14A645D400DA4240 /* Resources */,
+				6C06135214A6459B00DA4240 /* scripts */,
+			);
+			name = FinderOverride;
+			sourceTree = "<group>";
+		};
+		6C06135A14A645D400DA4240 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6C0611C114A6426F00DA4240 /* FinderOverride-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6C06141A14A64A4F00DA4240 /* injector */ = {
+			isa = PBXGroup;
+			children = (
+				6C06141D14A64A6500DA4240 /* main.m */,
+			);
+			name = injector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6C0611BF14A6426F00DA4240 /* FinderOverride */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C0611C414A6427000DA4240 /* Build configuration list for PBXNativeTarget "FinderOverride" */;
+			buildPhases = (
+				6C0611BC14A6426F00DA4240 /* Resources */,
+				6C0611BD14A6426F00DA4240 /* Sources */,
+				6C0611BE14A6426F00DA4240 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FinderOverride;
+			productName = FinderOverride;
+			productReference = 6C0611C014A6426F00DA4240 /* FinderOverride.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		6C06140F14A64A3600DA4240 /* injector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C06141B14A64A5000DA4240 /* Build configuration list for PBXNativeTarget "injector" */;
+			buildPhases = (
+				6C06140D14A64A3600DA4240 /* Sources */,
+				6C06140E14A64A3600DA4240 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = injector;
+			productName = injector;
+			productReference = 6C06141014A64A3600DA4240 /* injector */;
+			productType = "com.apple.product-type.tool";
+		};
+		6C06161014A67BEA00DA4240 /* mach_inject_bundle_stub */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6C06161514A67BEB00DA4240 /* Build configuration list for PBXNativeTarget "mach_inject_bundle_stub" */;
+			buildPhases = (
+				6C06160D14A67BEA00DA4240 /* Resources */,
+				6C06160E14A67BEA00DA4240 /* Sources */,
+				6C06160F14A67BEA00DA4240 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mach_inject_bundle_stub;
+			productName = mach_inject_bundle_stub;
+			productReference = 6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		8D1107260486CEB800E47090 /* DeathToDSStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DeathToDSStore" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6C06135E14A6461200DA4240 /* PBXTargetDependency */,
+				6C06166014A67D8900DA4240 /* PBXTargetDependency */,
+				6C06145314A64DAF00DA4240 /* PBXTargetDependency */,
+			);
+			name = DeathToDSStore;
+			productInstallPath = "$(HOME)/Applications";
+			productName = DeathToDSStore;
+			productReference = 8D1107320486CEB800E47090 /* DeathToDSStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DeathToDSStore" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* DeathToDSStore */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* DeathToDSStore */,
+				6C0611BF14A6426F00DA4240 /* FinderOverride */,
+				6C06161014A67BEA00DA4240 /* mach_inject_bundle_stub */,
+				6C06140F14A64A3600DA4240 /* injector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6C0611BC14A6426F00DA4240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06135514A6459B00DA4240 /* getAddress in Resources */,
+				6C06135614A6459B00DA4240 /* getOffset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06160D14A67BEA00DA4240 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06144814A64C8D00DA4240 /* injector in Resources */,
+				6C06166314A67D9000DA4240 /* mach_inject_bundle_stub.bundle in Resources */,
+				6C06136A14A646C700DA4240 /* FinderOverride.bundle in Resources */,
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6C0611BD14A6426F00DA4240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C0611C614A6428D00DA4240 /* FinderOverride.m in Sources */,
+				6C06133214A643BE00DA4240 /* mach_override.c in Sources */,
+				6C06141E14A64A6500DA4240 /* main.m in Sources */,
+				6C06145414A64DBF00DA4240 /* mach_inject_bundle.c in Sources */,
+				6C06145714A64DC600DA4240 /* mach_inject.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06140D14A64A3600DA4240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06142514A64ADE00DA4240 /* main.m in Sources */,
+				6C06143B14A64B7D00DA4240 /* mach_inject_bundle.c in Sources */,
+				6C06143E14A64B8300DA4240 /* mach_inject.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6C06160E14A67BEA00DA4240 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C06163014A67C4600DA4240 /* load_bundle.c in Sources */,
+				6C06163114A67C4700DA4240 /* mach_inject_bundle_stub.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.mm in Sources */,
+				256AC3DA0F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6C06135E14A6461200DA4240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C0611BF14A6426F00DA4240 /* FinderOverride */;
+			targetProxy = 6C06135D14A6461200DA4240 /* PBXContainerItemProxy */;
+		};
+		6C06145314A64DAF00DA4240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C06140F14A64A3600DA4240 /* injector */;
+			targetProxy = 6C06145214A64DAF00DA4240 /* PBXContainerItemProxy */;
+		};
+		6C06166014A67D8900DA4240 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6C06161014A67BEA00DA4240 /* mach_inject_bundle_stub */;
+			targetProxy = 6C06165F14A67D8900DA4240 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* InfoPlist.strings */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6C0611C214A6427000DA4240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Resources/FinderOverride-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = FinderOverride;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6C0611C314A6427000DA4240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Resources/FinderOverride-Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = FinderOverride;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		6C06141214A64A3700DA4240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = mach_star;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = injector;
+			};
+			name = Debug;
+		};
+		6C06141314A64A3700DA4240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				HEADER_SEARCH_PATHS = mach_star;
+				INSTALL_PATH = /usr/local/bin;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = injector;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		6C06161314A67BEA00DA4240 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = mach_inject_bundle_stub;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		6C06161414A67BEA00DA4240 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = mach_inject_bundle_stub;
+				WRAPPER_EXTENSION = bundle;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Resources/DeathToDSStore-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = DeathToDSStore;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "";
+				INFOPLIST_FILE = "Resources/DeathToDSStore-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = DeathToDSStore;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6C0611C414A6427000DA4240 /* Build configuration list for PBXNativeTarget "FinderOverride" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C0611C214A6427000DA4240 /* Debug */,
+				6C0611C314A6427000DA4240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C06141B14A64A5000DA4240 /* Build configuration list for PBXNativeTarget "injector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C06141214A64A3700DA4240 /* Debug */,
+				6C06141314A64A3700DA4240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6C06161514A67BEB00DA4240 /* Build configuration list for PBXNativeTarget "mach_inject_bundle_stub" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6C06161314A67BEA00DA4240 /* Debug */,
+				6C06161414A67BEA00DA4240 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "DeathToDSStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DeathToDSStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

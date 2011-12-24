@@ -1,0 +1,1 @@
+/usr/bin/nm /System/Library/PrivateFrameworks/DesktopServicesPriv.framework/DesktopServicesPriv | c++filt | grep HFSPlusPropertyStore::FlushChanges
