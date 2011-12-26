@@ -1,1 +1,0 @@
-vmmap Finder | grep DesktopServicesPriv | grep __TEXT

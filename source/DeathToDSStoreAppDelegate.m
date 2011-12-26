@@ -48,8 +48,6 @@
 	if( [[NSFileManager defaultManager] fileExistsAtPath:@"/usr/bin/c++filt"] ){ [needCPPFiltLabel setHidden:YES]; }else{ [needCPPFiltLabel setHidden:NO]; goodToGo = NO; }
 	
 	if( goodToGo ){ [cliInvokeLabel setHidden:NO]; [patchButton setEnabled:YES]; }else{ [cliInvokeLabel setHidden:YES]; [patchButton setEnabled:NO]; }
-
-//	[NSApp terminate:self];
 }
 
 @end

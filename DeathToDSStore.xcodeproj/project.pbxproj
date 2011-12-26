@@ -13,7 +13,6 @@
 		6C06132714A6438F00DA4240 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		6C06132D14A643B200DA4240 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C06132C14A643B200DA4240 /* AudioToolbox.framework */; };
 		6C06133214A643BE00DA4240 /* mach_override.c in Sources */ = {isa = PBXBuildFile; fileRef = 6C0611AC14A6420600DA4240 /* mach_override.c */; };
-		6C06135514A6459B00DA4240 /* getAddress in Resources */ = {isa = PBXBuildFile; fileRef = 6C06135314A6459B00DA4240 /* getAddress */; };
 		6C06135614A6459B00DA4240 /* getOffset in Resources */ = {isa = PBXBuildFile; fileRef = 6C06135414A6459B00DA4240 /* getOffset */; };
 		6C06136A14A646C700DA4240 /* FinderOverride.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C0611C014A6426F00DA4240 /* FinderOverride.bundle */; };
 		6C06141E14A64A6500DA4240 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C06141D14A64A6500DA4240 /* main.m */; };
@@ -82,7 +81,6 @@
 		6C0611C114A6426F00DA4240 /* FinderOverride-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FinderOverride-Info.plist"; path = "Resources/FinderOverride-Info.plist"; sourceTree = "<group>"; };
 		6C0611C514A6428D00DA4240 /* FinderOverride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FinderOverride.m; path = source/FinderOverride.m; sourceTree = "<group>"; };
 		6C06132C14A643B200DA4240 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		6C06135314A6459B00DA4240 /* getAddress */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getAddress; sourceTree = "<group>"; };
 		6C06135414A6459B00DA4240 /* getOffset */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = getOffset; sourceTree = "<group>"; };
 		6C06141014A64A3600DA4240 /* injector */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = injector; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C06141D14A64A6500DA4240 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = source/main.m; sourceTree = "<group>"; };
@@ -210,7 +208,6 @@
 		6C06135214A6459B00DA4240 /* scripts */ = {
 			isa = PBXGroup;
 			children = (
-				6C06135314A6459B00DA4240 /* getAddress */,
 				6C06135414A6459B00DA4240 /* getOffset */,
 			);
 			path = scripts;
@@ -348,7 +345,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C06135514A6459B00DA4240 /* getAddress in Resources */,
 				6C06135614A6459B00DA4240 /* getOffset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +584,11 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Resources/DeathToDSStore-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				OTHER_LDFLAGS = "-lc";
 				PRODUCT_NAME = DeathToDSStore;
 			};
 			name = Debug;
@@ -604,6 +605,11 @@
 				GCC_PREFIX_HEADER = "";
 				INFOPLIST_FILE = "Resources/DeathToDSStore-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SDKROOT)/usr/lib/system\"",
+				);
+				OTHER_LDFLAGS = "-lc";
 				PRODUCT_NAME = DeathToDSStore;
 			};
 			name = Release;
