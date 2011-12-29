@@ -1,0 +1,3 @@
+#!/bin/sh
+
+rm -f "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"

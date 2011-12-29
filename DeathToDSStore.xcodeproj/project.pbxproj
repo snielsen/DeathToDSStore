@@ -29,6 +29,9 @@
 		6C06163814A67C7600DA4240 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29B97325FDCFA39411CA2CEA /* Foundation.framework */; };
 		6C06164E14A67D5F00DA4240 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C06164D14A67D5F00DA4240 /* Carbon.framework */; };
 		6C06166314A67D9000DA4240 /* mach_inject_bundle_stub.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */; };
+		6C7C990014ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */; };
+		6C7C990614ACE6110026A104 /* installLaunchAgent in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C990514ACE6110026A104 /* installLaunchAgent */; };
+		6C7C991D14ACEBB60026A104 /* removeLaunchAgent in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C991C14ACEBB60026A104 /* removeLaunchAgent */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -87,6 +90,9 @@
 		6C06149014A66E2100DA4240 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		6C06161114A67BEA00DA4240 /* mach_inject_bundle_stub.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mach_inject_bundle_stub.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C06164D14A67D5F00DA4240 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = com.aoren.DeathToDSStore.plist; path = Resources/com.aoren.DeathToDSStore.plist; sourceTree = "<group>"; };
+		6C7C990514ACE6110026A104 /* installLaunchAgent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = installLaunchAgent; path = scripts/installLaunchAgent; sourceTree = "<group>"; };
+		6C7C991C14ACEBB60026A104 /* removeLaunchAgent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = removeLaunchAgent; path = scripts/removeLaunchAgent; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DeathToDSStore-Info.plist"; path = "Resources/DeathToDSStore-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* DeathToDSStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeathToDSStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -137,6 +143,7 @@
 				256AC3D90F4B6AC300CF3369 /* DeathToDSStoreAppDelegate.m */,
 				29B97316FDCFA39411CA2CEA /* main.mm */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				6C7C990414ACE6070026A104 /* scripts */,
 			);
 			name = DeathTODSStore;
 			sourceTree = "<group>";
@@ -171,6 +178,7 @@
 				8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+				6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -237,6 +245,15 @@
 				6C06141D14A64A6500DA4240 /* main.m */,
 			);
 			name = injector;
+			sourceTree = "<group>";
+		};
+		6C7C990414ACE6070026A104 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				6C7C990514ACE6110026A104 /* installLaunchAgent */,
+				6C7C991C14ACEBB60026A104 /* removeLaunchAgent */,
+			);
+			name = scripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -365,6 +382,9 @@
 				6C06136A14A646C700DA4240 /* FinderOverride.bundle in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				6C7C990014ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist in Resources */,
+				6C7C990614ACE6110026A104 /* installLaunchAgent in Resources */,
+				6C7C991D14ACEBB60026A104 /* removeLaunchAgent in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

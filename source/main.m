@@ -36,12 +36,14 @@ int main( int argc, char* argv[] )
 		pid_t pid; GetProcessPID( &psn, &pid );
 		
 		NSString* bundlePath = [NSString stringWithCString:argv[1] encoding:NSASCIIStringEncoding];
-
+		NSString* stubPath = [NSString stringWithCString:argv[2] encoding:NSASCIIStringEncoding];
+		
 		NSLog(@"bundlePath: %@", bundlePath);
+		NSLog(@"stubPath: %@", stubPath);
 		
 		NSLog(@"pid %d", pid);
 //		mach_error_t err = mach_inject_bundle_pid( [bundlePath fileSystemRepresentation], pid );
-		mach_error_t err = mach_inject_bundle_pid( [bundlePath fileSystemRepresentation], (CFURLRef)[NSURL URLWithString:[NSString stringWithCString:argv[2] encoding:NSASCIIStringEncoding]], pid );
+		mach_error_t err = mach_inject_bundle_pid( [bundlePath fileSystemRepresentation], (CFURLRef)[NSURL fileURLWithPath:stubPath], pid );
 				
 		NSLog(@"err %d", err);
 		

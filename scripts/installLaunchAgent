@@ -1,0 +1,18 @@
+#!/bin/sh
+
+if [ $1 != "/Library/Application Support/Aoren/DeathToDSStore.app" ]; then
+  rm -rf "/Library/Application Support/Aoren/DeathToDSStore.app"
+
+  mkdir -p -m 755 "/Library/Application Support/Aoren"
+  chown -R root:admin "/Library/Application Support/Aoren"
+
+  cp -R $1 "/Library/Application Support/Aoren/DeathToDSStore.app"
+  chgrp procmod "/Library/Application Support/Aoren/DeathToDSStore.app/Contents/Resources/injector"
+  chmod 2755 "/Library/Application Support/Aoren/DeathToDSStore.app/Contents/Resources/injector"
+fi
+
+rm -f "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
+
+cp "$1/Contents/Resources/com.aoren.DeathToDSStore.plist" "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
+chown root:wheel "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
+chmod 644 "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
