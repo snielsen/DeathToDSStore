@@ -1,13 +1,10 @@
- /*******************************************************************************
-	mach_inject.c
-		Copyright (c) 2003-2009 Jonathan 'Wolf' Rentzsch: <http://rentzsch.com>
-		Some rights reserved: <http://opensource.org/licenses/mit-license.php>
-
-	***************************************************************************/
+// mach_inject.c semver:1.2.0
+//   Copyright (c) 2003-2012 Jonathan 'Wolf' Rentzsch: http://rentzsch.com
+//   Some rights reserved: http://opensource.org/licenses/mit
+//   https://github.com/rentzsch/mach_inject
 
 #include	"mach_inject.h"
 
-#include <unistd.h>
 #include <mach-o/dyld.h>
 #include <mach-o/getsect.h>
 #include <mach/mach.h>
@@ -22,6 +19,7 @@
 // for mmap()
 #include <sys/types.h>
 #include <sys/mman.h>
+
 
 #ifndef	COMPILE_TIME_ASSERT( exp )
 	#define COMPILE_TIME_ASSERT( exp ) { switch (0) { case 0: case (exp):; } }
@@ -84,7 +82,7 @@ mach_inject(
 		if (err == 5) fprintf(stderr, "Could not access task for pid %d. You probably need to add user to procmod group\n", targetProcess);
 #endif
 	}
-		
+
 	/** @todo
 		Would be nice to just allocate one block for both the remote stack
 		*and* the remoteCode (including the parameter data block once that's
@@ -96,11 +94,12 @@ mach_inject(
 	if( !err )
 		err = vm_allocate( remoteTask, &remoteStack, stackSize, 1 );
 	
-	
+
 	//	Allocate the code.
 	vm_address_t remoteCode = (vm_address_t)NULL;
 	if( !err )
 		err = vm_allocate( remoteTask, &remoteCode, imageSize, 1 );
+	if( !err )
 		err = vm_protect(remoteTask, remoteCode, imageSize, 0, VM_PROT_EXECUTE | VM_PROT_WRITE | VM_PROT_READ);
 	if( !err ) {
 		ASSERT_CAST( pointer_t, image );
@@ -115,7 +114,7 @@ mach_inject(
 		free(fixedUpImage);
 #endif
 	}
-	
+
 	//	Allocate the paramBlock if specified.
 	vm_address_t remoteParamBlock = (vm_address_t)NULL;
 	if( !err && paramBlock != NULL && paramSize ) {
@@ -126,7 +125,7 @@ mach_inject(
 					(pointer_t) paramBlock, paramSize );
 		}
 	}
-		
+
 	//	Calculate offsets.
 	ptrdiff_t	threadEntryOffset, imageOffset;
 	if( !err ) {
@@ -143,7 +142,7 @@ mach_inject(
 		imageOffset = 0;
 #endif
 	}
-	
+
 	//	Allocate the thread.
 	thread_act_t remoteThread;
 #if defined (__ppc__) || defined (__ppc64__)
@@ -240,14 +239,14 @@ mach_inject(
 		vm_address_t dummy_thread_struct = remoteStack;
 		remoteStack += (stackSize / 2); // this is the real stack
 		// (*) increase the stack, since we're simulating a CALL instruction, which normally pushes return address on the stack
-		remoteStack -= 4;
+		remoteStack -= 8;
 		
 #define PARAM_COUNT 0
 #define STACK_CONTENTS_SIZE ((1+PARAM_COUNT) * sizeof(unsigned long long))
 		unsigned long long stackContents[1 + PARAM_COUNT]; // 1 for the return address and 1 for each param
 		// first entry is return address (see above *)
 		stackContents[0] = 0x00000DEADBEA7DAD; // invalid return address.
-		
+
 		// push stackContents
 		err = vm_write( remoteTask, remoteStack,
 						(pointer_t) stackContents, STACK_CONTENTS_SIZE);
@@ -283,7 +282,7 @@ mach_inject(
 		if( remoteStack )
 			vm_deallocate( remoteTask, remoteStack, stackSize );
 	}
-		
+
 	return err;
 }
 

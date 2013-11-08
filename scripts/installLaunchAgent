@@ -16,3 +16,8 @@ rm -f "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
 cp "$1/Contents/Resources/com.aoren.DeathToDSStore.plist" "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
 chown root:wheel "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
 chmod 644 "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
+
+if [ $(echo "`sw_vers -productVersion` > 10.7" | bc) -ne 0 ]; then
+  security add-trust -d -r trustRoot -p basic -p codeSign -k /Library/Keychains/System.keychain "$1/Contents/Resources/Aoren Self-Signed.cer"
+  /usr/sbin/DevToolsSecurity -enable
+fi

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 45;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,14 @@
 		6C7C990014ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */; };
 		6C7C990614ACE6110026A104 /* installLaunchAgent in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C990514ACE6110026A104 /* installLaunchAgent */; };
 		6C7C991D14ACEBB60026A104 /* removeLaunchAgent in Resources */ = {isa = PBXBuildFile; fileRef = 6C7C991C14ACEBB60026A104 /* removeLaunchAgent */; };
+		6CADD12F182C91E8004D1030 /* Aoren Self-Signed.cer in Resources */ = {isa = PBXBuildFile; fileRef = 6CADD12E182C91E8004D1030 /* Aoren Self-Signed.cer */; };
+		6CF0583C182A01FF00B959DF /* decode.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0582D182A01FF00B959DF /* decode.c */; };
+		6CF0583D182A01FF00B959DF /* input.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF05830182A01FF00B959DF /* input.c */; };
+		6CF0583E182A01FF00B959DF /* itab.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF05832182A01FF00B959DF /* itab.c */; };
+		6CF0583F182A01FF00B959DF /* syn-att.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF05834182A01FF00B959DF /* syn-att.c */; };
+		6CF05840182A01FF00B959DF /* syn-intel.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF05835182A01FF00B959DF /* syn-intel.c */; };
+		6CF05841182A01FF00B959DF /* syn.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF05836182A01FF00B959DF /* syn.c */; };
+		6CF05842182A01FF00B959DF /* udis86.c in Sources */ = {isa = PBXBuildFile; fileRef = 6CF0583A182A01FF00B959DF /* udis86.c */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.mm in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.mm */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -93,6 +101,23 @@
 		6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = com.aoren.DeathToDSStore.plist; path = Resources/com.aoren.DeathToDSStore.plist; sourceTree = "<group>"; };
 		6C7C990514ACE6110026A104 /* installLaunchAgent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = installLaunchAgent; path = scripts/installLaunchAgent; sourceTree = "<group>"; };
 		6C7C991C14ACEBB60026A104 /* removeLaunchAgent */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; name = removeLaunchAgent; path = scripts/removeLaunchAgent; sourceTree = "<group>"; };
+		6CAD8877182B5BC100BA8B0D /* injector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "injector-Info.plist"; path = "Resources/injector-Info.plist"; sourceTree = "<group>"; };
+		6CADD12E182C91E8004D1030 /* Aoren Self-Signed.cer */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Aoren Self-Signed.cer"; path = "Resources/Aoren Self-Signed.cer"; sourceTree = "<group>"; };
+		6CF0582D182A01FF00B959DF /* decode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = decode.c; sourceTree = "<group>"; };
+		6CF0582E182A01FF00B959DF /* decode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = decode.h; sourceTree = "<group>"; };
+		6CF0582F182A01FF00B959DF /* extern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = extern.h; sourceTree = "<group>"; };
+		6CF05830182A01FF00B959DF /* input.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = input.c; sourceTree = "<group>"; };
+		6CF05831182A01FF00B959DF /* input.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = input.h; sourceTree = "<group>"; };
+		6CF05832182A01FF00B959DF /* itab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = itab.c; sourceTree = "<group>"; };
+		6CF05833182A01FF00B959DF /* itab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = itab.h; sourceTree = "<group>"; };
+		6CF05834182A01FF00B959DF /* syn-att.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "syn-att.c"; sourceTree = "<group>"; };
+		6CF05835182A01FF00B959DF /* syn-intel.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "syn-intel.c"; sourceTree = "<group>"; };
+		6CF05836182A01FF00B959DF /* syn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = syn.c; sourceTree = "<group>"; };
+		6CF05837182A01FF00B959DF /* syn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = syn.h; sourceTree = "<group>"; };
+		6CF05838182A01FF00B959DF /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = types.h; sourceTree = "<group>"; };
+		6CF05839182A01FF00B959DF /* udint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = udint.h; sourceTree = "<group>"; };
+		6CF0583A182A01FF00B959DF /* udis86.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udis86.c; sourceTree = "<group>"; };
+		6CF0583B182A01FF00B959DF /* udis86.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = udis86.h; path = ../mach_override/udis86.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* DeathToDSStore-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "DeathToDSStore-Info.plist"; path = "Resources/DeathToDSStore-Info.plist"; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* DeathToDSStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeathToDSStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -179,6 +204,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				6C7C98FF14ACE3AD0026A104 /* com.aoren.DeathToDSStore.plist */,
+				6CADD12E182C91E8004D1030 /* Aoren Self-Signed.cer */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -209,6 +235,8 @@
 				6C06119C14A6413900DA4240 /* mach_inject.h */,
 				6C0611AC14A6420600DA4240 /* mach_override.c */,
 				6C0611AD14A6420600DA4240 /* mach_override.h */,
+				6CF0582C182A01FF00B959DF /* libudis86 */,
+				6CF0583B182A01FF00B959DF /* udis86.h */,
 			);
 			name = mach_star;
 			sourceTree = "<group>";
@@ -243,6 +271,7 @@
 			isa = PBXGroup;
 			children = (
 				6C06141D14A64A6500DA4240 /* main.m */,
+				6CAD8876182B5BB400BA8B0D /* Resources */,
 			);
 			name = injector;
 			sourceTree = "<group>";
@@ -254,6 +283,36 @@
 				6C7C991C14ACEBB60026A104 /* removeLaunchAgent */,
 			);
 			name = scripts;
+			sourceTree = "<group>";
+		};
+		6CAD8876182B5BB400BA8B0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CAD8877182B5BC100BA8B0D /* injector-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6CF0582C182A01FF00B959DF /* libudis86 */ = {
+			isa = PBXGroup;
+			children = (
+				6CF0582D182A01FF00B959DF /* decode.c */,
+				6CF0582E182A01FF00B959DF /* decode.h */,
+				6CF0582F182A01FF00B959DF /* extern.h */,
+				6CF05830182A01FF00B959DF /* input.c */,
+				6CF05831182A01FF00B959DF /* input.h */,
+				6CF05832182A01FF00B959DF /* itab.c */,
+				6CF05833182A01FF00B959DF /* itab.h */,
+				6CF05834182A01FF00B959DF /* syn-att.c */,
+				6CF05835182A01FF00B959DF /* syn-intel.c */,
+				6CF05836182A01FF00B959DF /* syn.c */,
+				6CF05837182A01FF00B959DF /* syn.h */,
+				6CF05838182A01FF00B959DF /* types.h */,
+				6CF05839182A01FF00B959DF /* udint.h */,
+				6CF0583A182A01FF00B959DF /* udis86.c */,
+			);
+			name = libudis86;
+			path = ../mach_override/libudis86;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -335,8 +394,19 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				TargetAttributes = {
+					6C0611BF14A6426F00DA4240 = {
+						DevelopmentTeam = UXE943G8L8;
+					};
+					6C06161014A67BEA00DA4240 = {
+						DevelopmentTeam = UXE943G8L8;
+					};
+				};
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "DeathToDSStore" */;
-			compatibilityVersion = "Xcode 3.1";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -378,6 +448,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6C06144814A64C8D00DA4240 /* injector in Resources */,
+				6CADD12F182C91E8004D1030 /* Aoren Self-Signed.cer in Resources */,
 				6C06166314A67D9000DA4240 /* mach_inject_bundle_stub.bundle in Resources */,
 				6C06136A14A646C700DA4240 /* FinderOverride.bundle in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
@@ -395,11 +466,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CF05841182A01FF00B959DF /* syn.c in Sources */,
 				6C0611C614A6428D00DA4240 /* FinderOverride.m in Sources */,
+				6CF0583F182A01FF00B959DF /* syn-att.c in Sources */,
+				6CF0583D182A01FF00B959DF /* input.c in Sources */,
+				6CF05842182A01FF00B959DF /* udis86.c in Sources */,
+				6CF0583C182A01FF00B959DF /* decode.c in Sources */,
 				6C06133214A643BE00DA4240 /* mach_override.c in Sources */,
+				6CF05840182A01FF00B959DF /* syn-intel.c in Sources */,
 				6C06141E14A64A6500DA4240 /* main.m in Sources */,
 				6C06145414A64DBF00DA4240 /* mach_inject_bundle.c in Sources */,
 				6C06145714A64DC600DA4240 /* mach_inject.c in Sources */,
+				6CF0583E182A01FF00B959DF /* itab.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +553,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -495,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -515,6 +595,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Aoren Self-Signed";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -524,7 +605,12 @@
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = mach_star;
 				INSTALL_PATH = /usr/local/bin;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Resources/injector-Info.plist",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = injector;
 			};
@@ -534,6 +620,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "Aoren Self-Signed";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -542,7 +629,12 @@
 				GCC_PREFIX_HEADER = "";
 				HEADER_SEARCH_PATHS = mach_star;
 				INSTALL_PATH = /usr/local/bin;
-				OTHER_LDFLAGS = "";
+				OTHER_LDFLAGS = (
+					"-sectcreate",
+					__TEXT,
+					__info_plist,
+					"Resources/injector-Info.plist",
+				);
 				PREBINDING = NO;
 				PRODUCT_NAME = injector;
 				ZERO_LINK = NO;
@@ -553,6 +645,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -573,6 +666,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
@@ -593,7 +687,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -617,7 +711,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_MODEL_TUNING = G5;
@@ -637,26 +731,28 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Aoren Self-Signed";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CODE_SIGN_IDENTITY = "Aoren Self-Signed";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PREBINDING = NO;
-				SDKROOT = macosx10.6;
+				SDKROOT = macosx;
 			};
 			name = Release;
 		};
