@@ -8,7 +8,7 @@ if [ $1 != "/Library/Application Support/Aoren/DeathToDSStore.app" ]; then
 
   cp -R $1 "/Library/Application Support/Aoren/DeathToDSStore.app"
   chgrp procmod "/Library/Application Support/Aoren/DeathToDSStore.app/Contents/Resources/injector"
-  chmod 2755 "/Library/Application Support/Aoren/DeathToDSStore.app/Contents/Resources/injector"
+  chmod 6755 "/Library/Application Support/Aoren/DeathToDSStore.app/Contents/Resources/injector"
 fi
 
 rm -f "/Library/LaunchAgents/com.aoren.DeathToDSStore.plist"
