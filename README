@@ -1,6 +1,6 @@
 Death To .DS_Store
 
-The .DS_Store file is an abomination and should be stopped. This project live-patches the Finder on SnowLeopard (64-bit), Lion, Mountain Lion and Mavericks to no longer produce .DS_Store files. It does not actually alter the Finder app and must be run every time the Finder relaunches. It requires admin privileges to work and can be run on the command line with the -silent option. Contains an (optional) installable Launch Agent so it will patch the Finder every time a user logs in.
+The .DS_Store file is an abomination and should be stopped. This project live-patches the Finder on 10.6-10.10 64-bit Macs to no longer produce .DS_Store files. It does not actually alter the Finder app and must be run every time the Finder relaunches. It requires admin privileges to work and can be run on the command line with the -silent option. Contains an (optional) installable Launch Agent so it will patch the Finder every time a user logs in.
 
 Should build right out the box after configuring your signing identity. Only tested with Xcode 5.0.1.
 
