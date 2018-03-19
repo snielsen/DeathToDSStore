@@ -46,6 +46,9 @@ int main( int argc, char* argv[] )
 		mach_error_t err = mach_inject_bundle_pid( [bundlePath fileSystemRepresentation], (CFURLRef)[NSURL fileURLWithPath:stubPath], pid );
 				
 		NSLog(@"err %d", err);
+		if( !err ){
+			NSLog(@"Success!");
+		}
 		
 	[pool release];
 
